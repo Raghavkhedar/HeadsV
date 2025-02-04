@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rakkas&family=Space+Grotesk:wght@300..700&display=swap');
+
+html,body{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	margin: 0;
+}
+body{
+	/* background-image: radial-gradient(whitesmoke, lavenderblush); */
+    background-image: url('https://img.freepik.com/free-vector/decorative-premium-upholstery-sofa-pattern-dark-background-design_1017-50294.jpg');
+    background-size: cover; 
+    background-position: center; 
+	font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+	padding-bottom: 50px;
+	position: relative;
+	margin: auto;
+
+    
+}
+.boddy{
+	height: auto;
+    min-height: 100vh;
+	overflow: auto;
+    width: 100%;
+	margin: auto;
+}
+
+.text{
+	padding: 20px;
+	display: flex;
+	text-align: center;
+	color: white;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+.box{
+	display: flex;
+    
+	justify-content: center;
+	align-items: center;
+	
+}
+/* .dark {
+    text-align: center;  Center the text */
+    /* padding: 20px 0; Add some vertical space */ 
+    /* background-color: #333;  Example background color for contrast
+    color: #fff; 
+} */ 
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Center the heading and cards horizontally */
+    margin: 0 auto;         /* Center the container in the viewport */
+    padding-top: 20px;      /* Add padding at the top */
+}
+.heading {
+	text-align: center;
+	margin: 20px 0;
+}
+.cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	padding: 20px;
+	flex-direction: column;
+}
+.card{
+	width: 300px;
+	height: 350px;
+	/* background-image: url(https://wallpapershome.com/images/pages/pic_v/864.jpg);  */
+	background-position: center;
+	background-size: 100%;
+	border-radius: 15px;
+	box-sizing: border-box;
+	display: flex;
+	place-items: end;
+	/* box-shadow: 15px 15px 0px rgba(120,0,120,.3); */
+	transition: 0.4s;
+	cursor: pointer;
+    padding: 20px; /* Space inside each card */
+    background-color: #f0f0f0; /* Example card background */
+    height: 300px; /* Example card height */
+    margin-right: 70px; /* Space between the cards horizontally */
+    margin-bottom: 20px;
+	display: flex;
+    flex-wrap: wrap;
+        
+}
+.card:hover .bottom{
+	height: 195px;
+	cursor: pointer;
+}
+.card:hover{
+	transform: scale(1.05,1.05);
+	box-shadow: -15px -15px 0px rgba(120,0,120,.3);
+}
+.card .bottom{
+	height: 110px;
+	width: 100%;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,.8), rgba(0,0,0,.8));
+	box-sizing: border-box;
+	padding: 15px;
+	transition: 0.5s;
+	overflow: hidden;
+}
+.card .bottom h1{
+	margin: 0;
+	font-family: 'poppins';
+	color: white;
+}
+.card .bottom p{
+	color: white;
+	font-family: 'poppins';
+	font-weight: 300;
+	font-size: .75em;
+}
+h1 {
+    text-align: center;  /* Centers the text */
+    color: white;         /* Sets text color to white */
+    margin-top: 20px;     /* Adds some space from the top */
+    font-family: Arial, sans-serif;
+    
+}
+.bottom {
+    text-align: center;
+}
+
+.bottom h1 {
+    color: #333;
+}
+
+.bottom p {
+    font-size: 1.2rem;
+    color: #555;
+}
+.card h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+.card img {
+	width: 100%;
+	border-radius: 10px;
+  }
+  .social-links {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+  }
+  .social-links a {
+	color: white;
+	text-decoration: none;
+  }
+  .social-links a:hover {
+	color: #0077b5; /* LinkedIn blue for hover */
+}
