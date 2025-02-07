@@ -10,10 +10,12 @@ html,body{
 }
 body{
 	/* background-image: radial-gradient(whitesmoke, lavenderblush); */
-    background-image: url('https://img.freepik.com/free-vector/decorative-premium-upholstery-sofa-pattern-dark-background-design_1017-50294.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhZPhZYfetFekVDGfWA5nPbeM5buZLFZ23w&s');
     background-size: cover; 
     background-position: center; 
-	font-family: Arial, sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size:25px;
+	text-decoration: bold;
     margin: 0;
     padding: 0;
     display: flex;
@@ -46,8 +48,7 @@ body{
 	align-items: center;
 }
 .box{
-	display: flex;
-    
+	display: flex;    
 	justify-content: center;
 	align-items: center;
 	
@@ -72,14 +73,14 @@ body{
 .cards-container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 50px;
 	justify-content: center;
 	padding: 20px;
 	flex-direction: column;
 }
 .card{
 	width: 300px;
-	height: 350px;
+	height: 300px;
 	/* background-image: url(https://wallpapershome.com/images/pages/pic_v/864.jpg);  */
 	background-position: center;
 	background-size: 100%;
@@ -87,12 +88,12 @@ body{
 	box-sizing: border-box;
 	display: flex;
 	place-items: end;
-	/* box-shadow: 15px 15px 0px rgba(120,0,120,.3); */
+	box-shadow: 15px 15px 0px rgba(125, 80, 1, 0.3);
 	transition: 0.4s;
 	cursor: pointer;
-    padding: 20px; /* Space inside each card */
+    padding: 40px; /* Space inside each card */
     background-color: #f0f0f0; /* Example card background */
-    height: 300px; /* Example card height */
+    height: 400px; /* Example card height */
     margin-right: 70px; /* Space between the cards horizontally */
     margin-bottom: 20px;
 	display: flex;
@@ -105,7 +106,7 @@ body{
 }
 .card:hover{
 	transform: scale(1.05,1.05);
-	box-shadow: -15px -15px 0px rgba(120,0,120,.3);
+	box-shadow: -15px -15px 0px rgba(207, 73, 35, 0.3);
 }
 .card .bottom{
 	height: 110px;
@@ -128,6 +129,15 @@ body{
 	font-family: 'poppins';
 	font-weight: 300;
 	font-size: .75em;
+}
+.social-links {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+  /* Show links when hovering over the card */
+.card:hover .social-links {
+    opacity: 1;
 }
 h1 {
     text-align: center;  /* Centers the text */
